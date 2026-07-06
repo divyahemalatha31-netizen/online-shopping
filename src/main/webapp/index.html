@@ -1,146 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Shopping</title>
-
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, sans-serif;
-        }
-
-        body{
-            background:#f4f4f4;
-        }
-
-        header{
-            background:#2c3e50;
-            color:white;
-            padding:15px;
-            text-align:center;
-        }
-
-        nav{
-            background:#34495e;
-            padding:10px;
-            text-align:center;
-        }
-
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:15px;
-            font-weight:bold;
-        }
-
-        .banner{
-            background:#3498db;
-            color:white;
-            text-align:center;
-            padding:50px;
-        }
-
-        .products{
-            display:flex;
-            justify-content:center;
-            flex-wrap:wrap;
-            gap:20px;
-            padding:30px;
-        }
-
-        .card{
-            width:250px;
-            background:white;
-            border-radius:10px;
-            box-shadow:0 2px 8px rgba(0,0,0,0.2);
-            text-align:center;
-            padding:15px;
-        }
-
-        .card img{
-            width:100%;
-            height:200px;
-            object-fit:cover;
-            border-radius:8px;
-        }
-
-        .price{
-            color:green;
-            font-size:20px;
-            margin:10px 0;
-        }
-
-        button{
-            background:#27ae60;
-            color:white;
-            border:none;
-            padding:10px 20px;
-            border-radius:5px;
-            cursor:pointer;
-        }
-
-        button:hover{
-            background:#219150;
-        }
-
-        footer{
-            background:#2c3e50;
-            color:white;
-            text-align:center;
-            padding:15px;
-            margin-top:20px;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Online Shopping Store</h1>
-</header>
-
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">Cart</a>
-    <a href="#">Contact</a>
-</nav>
-
-<div class="banner">
-    <h2>Welcome to Our Shopping Store</h2>
-    <p>Best Deals | Best Prices | Fast Delivery</p>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Luxora Shopping</title>
+<style>
+body{margin:0;font-family:Arial;background:#f5f5f5}header{background:#111;color:#d4af37;padding:15px;text-align:center}
+nav{background:#222;padding:10px;text-align:center}nav a{color:#fff;margin:0 12px;text-decoration:none}
+.hero{background:linear-gradient(#111,#333);color:#fff;padding:40px;text-align:center}
+.search{margin:20px auto;max-width:500px;display:flex}.search input{flex:1;padding:10px}.search button{padding:10px;background:#d4af37;border:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:20px}
+.card{background:#fff;padding:15px;border-radius:8px;box-shadow:0 2px 6px #999;text-align:center}
+.card img{width:100%;height:180px;object-fit:cover;border-radius:6px}
+.price{color:#0a8f2d;font-weight:bold}.btn{background:#d4af37;border:0;padding:10px 16px;border-radius:5px}
+footer{background:#111;color:#fff;text-align:center;padding:15px}
+</style></head><body>
+<header><h1>LUXORA SHOPPING</h1></header>
+<nav><a href="#">Home</a><a href="#">Attar</a><a href="#">Watches</a><a href="#">Rings</a><a href="#">Chains</a></nav>
+<div class="hero"><h2>Luxury Collection</h2><p>Attars, Watches, Rings & Chains</p><div class="search"><input placeholder="Search products"><button>Search</button></div></div>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=400"><h3>Premium Attar</h3><p class="price">₹999</p><button class="btn">Add to Cart</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400"><h3>Luxury Watch</h3><p class="price">₹2999</p><button class="btn">Add to Cart</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400"><h3>Gold Ring</h3><p class="price">₹1599</p><button class="btn">Add to Cart</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=400"><h3>Gold Chain</h3><p class="price">₹2499</p><button class="btn">Add to Cart</button></div>
 </div>
-
-<section class="products">
-
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=250&h=200&fit=crop" alt="Laptop">
-        <h3>Laptop</h3>
-        <p class="price">₹55,000</p>
-        <button>Add to Cart</button>
-    </div>
-
-    <div class="card">
-       <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=250&h=200&fit=crop" alt="Mobile">
-        <h3>Smart Phone</h3>
-        <p class="price">₹20,000</p>
-        <button>Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=250&h=200&fit=crop" alt="Headphones">
-        <p class="price">₹2,500</p>
-        <button>Add to Cart</button>
-    </div>
-
-</section>
-
-<footer>
-    <p>&copy; 2026 Online Shopping Store | All Rights Reserved</p>
-</footer>
-
-</body>
-</html>
+<footer>©2026 Luxora Shopping Store</footer>
+</body></html>
